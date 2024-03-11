@@ -30,7 +30,7 @@ const Booknow = () => {
   useEffect(() => {
     setData(JSON.parse(localStorage.getItem("student")) || []);
     console.log(data);
-  }, [show]);
+  }, [show]);//button
   function search() {
     const filter = data.filter((ele) => ele.id === seatNo);
     
