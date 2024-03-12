@@ -22,7 +22,9 @@ import { Link as ChakraLink } from "@chakra-ui/react";
 import image from '../assets/image.png'
 
 const Login = () => {
-  
+  const {setAuth}=useContext(AuthContext)
+
+
 
   return (
     <Box
@@ -31,17 +33,17 @@ const Login = () => {
       alignItems={"center"}
       mt={15}
     >
-      <Box display={"flex"} flexDirection={"column"} alignItems={"center"} border="1px solid black" p={10} mt={10}>
-        <Image src={image} />
+      <Box display={"flex"} flexDirection={"column"} alignItems={"center"} border="1px solid black" p={10} mt={200}>
+        <Image src={image} w={40}/>
         <Text textAlign={"center"} className="roboto-bold" fontSize={20}>
-          User Login
+          Admin login
         </Text>
         
         <br />
         <br />
         <FormControl>
           <label className="roboto-bold" fontSize={10}>
-            Email
+            Enter Id(eg:-#234w2):
           </label>
           <br />
 
@@ -54,7 +56,7 @@ const Login = () => {
           </InputGroup>
           <br /><br />
           <label className="roboto-bold" fontSize={10}>
-            Password
+            Enter code :
           </label>
           <br />
           <InputGroup size="md">
@@ -64,38 +66,27 @@ const Login = () => {
               border="1px solid black"
              
             />
-            <InputRightElement width="4.5rem">
-              <Button h="1.75rem" size="sm" bg="white">
-                {true ? "Hide" : "Show"}
-              </Button>
-            </InputRightElement>
+            
           </InputGroup>
           <br />
           <br />
         
           <Input
-            w={40}
+            w={100}
             mt={10}
+            ml={70}
+            
             type="submit"
-            value="Login"
+            value="Verify"
             bg="#004F9A"
             borderRadius={20}
             color={"white"}
             cursor={"pointer"}
+            onClick={()=>setAuth()}
             
           />
           
-          <Input
-            w={40}
-            type="submit"
-            value="Create account"
-            bg="white"
-            borderRadius={20}
-            ml={1}
-            color={"black"}
-            cursor={"pointer"}
-            
-          />
+         
 
 
           <br />
