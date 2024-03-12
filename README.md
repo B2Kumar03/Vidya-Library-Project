@@ -57,11 +57,12 @@ Utilize visualizations to understand library usage patterns.
 - Graphical representation of seat occupancy over time.
 - Visual cues for available and booked seats.
 
-## 7. Responsive Design
+### Utilizing `localStorage` for Admin Data
 
-Access the library system from various devices with a responsive design.
+The admin panel leverages `localStorage` to store and retrieve data locally.
 
-- Enjoy a consistent and user-friendly experience on desktop, tablet, and mobile devices.
+- Admins can view and manage booked seats without the need for a server-side database.
+- Enhance data persistence and availability through client-side storage.
 
 
 
