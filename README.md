@@ -67,9 +67,9 @@ The admin panel leverages `localStorage` to store and retrieve data locally.
 
 
 - Home
-![Library Catalog](https://github.com/B2Kumar03/project2Image/blob/main/Screenshot%202024-03-11%20232756.png?raw=true)
+
 - Footer
-![Library Catalog](https://github.com/B2Kumar03/project2Image/blob/main/Screenshot%202024-03-11%20232813.png?raw=true)
+
 - Book now
 ![Library Catalog](https://github.com/B2Kumar03/project2Image/blob/main/Screenshot%202024-03-11%20232830.png?raw=true)
 - Admin pannel
